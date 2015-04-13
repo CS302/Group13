@@ -12,39 +12,52 @@ namespace Lesson3
     {
         static void Main(string[] args)
         {
-            int x = 10;
-            double y = Math.Pow(x, 2); //пример статичного метода от статичного класса
-            
-            Worker[] workers = new Worker[5];
-            workers[0] = new Driver("John", 25, 4465132, "BMW", 278);
-            workers[1] = new Manager("Natalie", 23, 78486548, 13);
-            workers[2] = new Manager("Andre", 45, 87485132, 25);
-            workers[3] = new Driver("Ivan", 29, 87652, "Volvo", 256);
-            workers[4] = new Manager("Svetlana", 25, 48653, 10);
+            Random rnd = new Random();
+            string[] names = new string[] { "John", "Svetlana", "Freddy", "Kate", "Phillip", "Ivan" };
+            Worker[] workers = new Worker[rnd.Next(5, 10)];
+            for (int i = 0; i < workers.GetLength(0); i++)
+            {
+                if (rnd.Next(0, 2) == 0)
+                {
+                    workers[i] = new Driver(names[rnd.Next(0, names.GetLength(0))], 
+                        rnd.Next(18, 66), 
+                        rnd.Next(111111, 999999),
+                        "Lada", 
+                        rnd.Next(10, 256));
+                }
+                else
+	            {
+                    workers[i] = new Manager(names[rnd.Next(0, names.GetLength(0))],
+                        rnd.Next(18, 66), 
+                        rnd.Next(111111, 999999),
+                        rnd.Next(10, 25));
+	            }
+            }
 
             for (int i = 0; i < workers.GetLength(0); i++)
             {
                 workers[i].Print();
             }
 
-            Driver driver = new Driver("Ivan", 29, 87652, "Volvo", 256);
+            /*Driver driver = new Driver("Ivan", 29, 87652, "Volvo", 256);
+            Console.WriteLine(driver.PayTax());
             Manager manager = new Manager("Svetlana", 25, 48653, 10);
-            Worker worker = manager;
-
+            Worker worker = manager;*/
+                        
             /*if (worker is Driver)
             {
                 Driver dr = (Driver)worker;
                 Console.WriteLine(dr.hours);
             }*/
 
-            Driver dr = worker as Driver;
+            /*Driver dr = worker as Driver;
             if (dr != null)
             {
                 Console.WriteLine(dr.hours);
             }
 
 
-            Console.WriteLine(Worker.count);
+            Console.WriteLine(Worker.count);*/
             Console.WriteLine();
         }
         private static void Arrays()
@@ -118,9 +131,7 @@ namespace Lesson3
             Console.WriteLine("З/П: " + salary);
             Console.WriteLine("Премия: " + GetBonus());
         }
-
         public abstract double GetBonus();
-
         public void SetAge(int a)
         {
             if (a < 0)
@@ -169,7 +180,7 @@ namespace Lesson3
         {   }
     }
 
-    sealed class Driver : Worker
+    sealed class Driver : Worker, IPayTax
     {
         public string carType;
         public int hours;
@@ -187,6 +198,12 @@ namespace Lesson3
             return hours * 100;
         }
 
+        public double PayTax()
+        {
+            double bonus = GetBonus();
+            return bonus * 0.13;
+        }
+
         public Driver(string name, int age, Int64 snn, string carType, int hours)
             : base(name, age, snn)
         {
@@ -196,7 +213,7 @@ namespace Lesson3
         }
     }
 
-    sealed class Manager : Worker 
+    sealed class Manager : Worker, IPayTax 
     {
         public int projectsCount;
 
@@ -212,6 +229,11 @@ namespace Lesson3
             return projectsCount * 1500;
         }
 
+        public double PayTax()
+        {
+            return 0.13 * GetBonus();
+        }
+
         public override void Print()
         {
             base.Print();
@@ -219,5 +241,10 @@ namespace Lesson3
             Console.WriteLine();
             Console.WriteLine();
         }
+    }
+
+    public interface IPayTax
+    {
+        double PayTax();
     }
 }
