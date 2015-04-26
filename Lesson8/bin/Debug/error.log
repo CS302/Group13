@@ -1,0 +1,40 @@
+23.04.2015 18:43:36
+Входная строка имела неверный формат.
+   в System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   в System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   в System.Int32.Parse(String s)
+   в Lesson8.Work.Start() в c:\Users\Alex\Documents\GitHub\Group13\Lesson8\Program.cs:строка 45
+---------------------------------
+23.04.2015 18:45:25
+Входная строка имела неверный формат.
+   в System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   в System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   в System.Int32.Parse(String s)
+   в Lesson8.Work.Start() в c:\Users\Alex\Documents\GitHub\Group13\Lesson8\Program.cs:строка 45
+---------------------------------
+23.04.2015 18:45:32
+Значение было недопустимо малым или недопустимо большим для Int32.
+   в System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   в System.Int32.Parse(String s)
+   в Lesson8.Work.Start() в c:\Users\Alex\Documents\GitHub\Group13\Lesson8\Program.cs:строка 45
+---------------------------------
+23.04.2015 18:49:50
+Попытка деления на нуль.
+   в Lesson8.Work.Start() в c:\Users\Alex\Documents\GitHub\Group13\Lesson8\Program.cs:строка 41
+   в Lesson8.Program.Main(String[] args) в c:\Users\Alex\Documents\GitHub\Group13\Lesson8\Program.cs:строка 17
+---------------------------------
+23.04.2015 18:50:20
+Попытка деления на нуль.
+   в Lesson8.Work.Start() в c:\Users\Alex\Documents\GitHub\Group13\Lesson8\Program.cs:строка 41
+   в Lesson8.Program.Main(String[] args) в c:\Users\Alex\Documents\GitHub\Group13\Lesson8\Program.cs:строка 17
+---------------------------------
+23.04.2015 18:52:24
+А мне захотелось
+   в Lesson8.Work.Start() в c:\Users\Alex\Documents\GitHub\Group13\Lesson8\Program.cs:строка 40
+   в Lesson8.Program.Main(String[] args) в c:\Users\Alex\Documents\GitHub\Group13\Lesson8\Program.cs:строка 17
+---------------------------------
+23.04.2015 19:14:04
+А мне захотелось
+   в Lesson8.Work.Start() в c:\Users\Alex\Documents\GitHub\Group13\Lesson8\Program.cs:строка 40
+   в Lesson8.Program.Main(String[] args) в c:\Users\Alex\Documents\GitHub\Group13\Lesson8\Program.cs:строка 17
+---------------------------------

@@ -188,7 +188,12 @@ namespace Lesson7
 
 
     }
-    class Point<T, M> where T : struct
+    /// <summary>
+    /// Точка на графике
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <typeparam name="M"></typeparam>
+    class Point<T, M> where M : struct
     {
         public T x;
         public M y;
