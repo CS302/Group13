@@ -1,0 +1,6 @@
+C:\Users\Alex\Documents\GitHub\Group13\Lesson9_types\bin\Debug\Lesson9_types.exe.config
+C:\Users\Alex\Documents\GitHub\Group13\Lesson9_types\bin\Debug\Lesson9_types.exe
+C:\Users\Alex\Documents\GitHub\Group13\Lesson9_types\bin\Debug\Lesson9_types.pdb
+C:\Users\Alex\Documents\GitHub\Group13\Lesson9_types\obj\Debug\Lesson9_types.exe
+C:\Users\Alex\Documents\GitHub\Group13\Lesson9_types\obj\Debug\Lesson9_types.pdb
+C:\Users\Alex\Documents\GitHub\Group13\Lesson9_types\obj\Debug\Lesson9_types.csprojResolveAssemblyReference.cache

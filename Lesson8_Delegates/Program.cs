@@ -20,10 +20,7 @@ namespace Lesson8_Delegates
         static void Main(string[] args)
         {
             // + - * / ^
-            while (comand != "exit")
-            {
-                Math.Pow(4, 2);
-                /*
+            /*
                  * все операнды типа double
                  * операции + - * / (^)
                  * арифметическая операция выполняется по нажатию Enter
@@ -47,13 +44,6 @@ namespace Lesson8_Delegates
                  *  
                  * 
                  */
-
-                int x = 50 / 0;         //ошибка компиляции
-                double y = 50.0 / 0;    //определена константа "бесконечность"
-            }
-
-
-            
             List<string> list = new List<string>();
             ArrayList list2 = new ArrayList();
             list2.Add(2);
