@@ -1,0 +1,9 @@
+C:\Users\Alex\Documents\GitHub\Group13\Lesson10_calc\bin\Debug\Lesson10_calc.exe.config
+C:\Users\Alex\Documents\GitHub\Group13\Lesson10_calc\bin\Debug\Lesson10_calc.exe
+C:\Users\Alex\Documents\GitHub\Group13\Lesson10_calc\bin\Debug\Lesson10_calc.pdb
+C:\Users\Alex\Documents\GitHub\Group13\Lesson10_calc\obj\Debug\Lesson10_calc.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Documents\GitHub\Group13\Lesson10_calc\obj\Debug\Lesson10_calc.Form1.resources
+C:\Users\Alex\Documents\GitHub\Group13\Lesson10_calc\obj\Debug\Lesson10_calc.Properties.Resources.resources
+C:\Users\Alex\Documents\GitHub\Group13\Lesson10_calc\obj\Debug\Lesson10_calc.csproj.GenerateResource.Cache
+C:\Users\Alex\Documents\GitHub\Group13\Lesson10_calc\obj\Debug\Lesson10_calc.exe
+C:\Users\Alex\Documents\GitHub\Group13\Lesson10_calc\obj\Debug\Lesson10_calc.pdb

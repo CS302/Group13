@@ -6,14 +6,30 @@ using System.Threading.Tasks;
 
 namespace WorkersLibrary
 {
+    /// <summary>
+    /// Абстрактный базовый класс "Работник"
+    /// </summary>
     public abstract class Worker
     {
-        private string name;
+        #region Поля
+        /// <summary>
+        /// Имя работника
+        /// </summary>
+        private string name; 
         private int age;
         public Int64 snn;
         protected int salary;
         public static int count;
+        
+        #endregion
 
+        #region Свойства
+        /// <summary>
+        /// Возраст работника
+        /// </summary>
+        /// <value>
+        /// Значение в диапазоне [18 - 65]
+        /// </value>
         public int Age
         {
             set
@@ -35,7 +51,10 @@ namespace WorkersLibrary
         public string Name
         {
             get { return name; }
-        }
+        } 
+        #endregion
+
+        #region Методы
         public virtual void Print()
         {
             Console.WriteLine("Имя: " + name);
@@ -67,8 +86,10 @@ namespace WorkersLibrary
             {
                 workers[i].Print();
             }
-        }
+        } 
+        #endregion
 
+        #region Конструкторы
         public Worker()
         {
 
@@ -90,74 +111,7 @@ namespace WorkersLibrary
 
         public Worker(string name, int age)
             : this(name, age, 0)
-        { }
-    }
-
-    public sealed class Driver : Worker, IPayTax
-    {
-        public string carType;
-        public int hours;
-
-        public override void Print()
-        {
-            base.Print();
-            Console.WriteLine("Машина: " + carType);
-            Console.WriteLine("Кол-во часов: " + hours);
-            Console.WriteLine();
-            Console.WriteLine();
-        }
-        public override double GetBonus()
-        {
-            return hours * 100;
-        }
-
-        public double PayTax()
-        {
-            double bonus = GetBonus();
-            return bonus * 0.13;
-        }
-
-        public Driver(string name, int age, Int64 snn, string carType, int hours)
-            : base(name, age, snn)
-        {
-            this.carType = carType;
-            this.hours = hours;
-            salary = 35000;
-        }
-    }
-
-    public sealed class Manager : Worker, IPayTax
-    {
-        public int projectsCount;
-
-        public Manager(string name, int age, Int64 snn, int projectsCount)
-            : base(name, age, snn)
-        {
-            this.projectsCount = projectsCount;
-            salary = 40000;
-        }
-
-        public override double GetBonus()
-        {
-            return projectsCount * 1500;
-        }
-
-        public double PayTax()
-        {
-            return 0.13 * GetBonus();
-        }
-
-        public override void Print()
-        {
-            base.Print();
-            Console.WriteLine("Проектов: " + projectsCount);
-            Console.WriteLine();
-            Console.WriteLine();
-        }
-    }
-
-    public interface IPayTax
-    {
-        double PayTax();
+        { } 
+        #endregion
     }
 }
