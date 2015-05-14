@@ -8,8 +8,20 @@ namespace WorkersLibrary
 {
     public sealed class Driver : Worker, IPayTax
     {
-        public string carType;
-        public int hours;
+        private string carType;
+
+        public string CarType
+        {
+            get { return carType; }
+            set { carType = value; }
+        }
+        private int hours;
+
+        public int Hours
+        {
+            get { return hours; }
+            set { hours = value; }
+        }
 
         public override void Print()
         {

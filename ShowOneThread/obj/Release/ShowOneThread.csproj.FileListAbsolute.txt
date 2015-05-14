@@ -1,0 +1,9 @@
+C:\Users\Alex\Documents\GitHub\Group13\ShowOneThread\bin\Release\ShowOneThread.exe.config
+C:\Users\Alex\Documents\GitHub\Group13\ShowOneThread\bin\Release\ShowOneThread.exe
+C:\Users\Alex\Documents\GitHub\Group13\ShowOneThread\bin\Release\ShowOneThread.pdb
+C:\Users\Alex\Documents\GitHub\Group13\ShowOneThread\obj\Release\ShowOneThread.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Documents\GitHub\Group13\ShowOneThread\obj\Release\ShowOneThread.Form1.resources
+C:\Users\Alex\Documents\GitHub\Group13\ShowOneThread\obj\Release\ShowOneThread.Properties.Resources.resources
+C:\Users\Alex\Documents\GitHub\Group13\ShowOneThread\obj\Release\ShowOneThread.csproj.GenerateResource.Cache
+C:\Users\Alex\Documents\GitHub\Group13\ShowOneThread\obj\Release\ShowOneThread.exe
+C:\Users\Alex\Documents\GitHub\Group13\ShowOneThread\obj\Release\ShowOneThread.pdb

@@ -17,7 +17,9 @@ namespace WorkersLibrary
         /// </summary>
         private string name; 
         private int age;
-        public Int64 snn;
+        private Int64 snn;
+
+        
         protected int salary;
         public static int count;
         
@@ -51,7 +53,13 @@ namespace WorkersLibrary
         public string Name
         {
             get { return name; }
-        } 
+        }
+
+        public Int64 Snn
+        {
+            get { return snn; }
+            set { snn = value; }
+        }
         #endregion
 
         #region Методы

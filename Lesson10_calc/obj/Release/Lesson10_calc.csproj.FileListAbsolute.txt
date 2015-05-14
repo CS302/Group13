@@ -6,3 +6,4 @@ C:\Users\Alex\Documents\GitHub\Group13\Lesson10_calc\obj\Release\Lesson10_calc.P
 C:\Users\Alex\Documents\GitHub\Group13\Lesson10_calc\obj\Release\Lesson10_calc.csproj.GenerateResource.Cache
 C:\Users\Alex\Documents\GitHub\Group13\Lesson10_calc\obj\Release\Lesson10_calc.exe
 C:\Users\Alex\Documents\GitHub\Group13\Lesson10_calc\obj\Release\Lesson10_calc.pdb
+C:\Users\Alex\Documents\GitHub\Group13\Lesson10_calc\obj\Release\Lesson10_calc.csprojResolveAssemblyReference.cache

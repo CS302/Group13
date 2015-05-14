@@ -1,0 +1,8 @@
+C:\Users\Alex\Documents\GitHub\Group13\Lesson7\bin\Release\Lesson7.exe.config
+C:\Users\Alex\Documents\GitHub\Group13\Lesson7\bin\Release\Lesson7.exe
+C:\Users\Alex\Documents\GitHub\Group13\Lesson7\bin\Release\Lesson7.pdb
+C:\Users\Alex\Documents\GitHub\Group13\Lesson7\bin\Release\WorkersLibrary.dll
+C:\Users\Alex\Documents\GitHub\Group13\Lesson7\bin\Release\WorkersLibrary.pdb
+C:\Users\Alex\Documents\GitHub\Group13\Lesson7\obj\Release\Lesson7.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Documents\GitHub\Group13\Lesson7\obj\Release\Lesson7.exe
+C:\Users\Alex\Documents\GitHub\Group13\Lesson7\obj\Release\Lesson7.pdb

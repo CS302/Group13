@@ -8,7 +8,13 @@ namespace WorkersLibrary
 {
     public sealed class Manager : Worker, IPayTax
     {
-        public int projectsCount;
+        private int projectsCount;
+
+        public int ProjectsCount
+        {
+            get { return projectsCount; }
+            set { projectsCount = value; }
+        }
 
         public Manager(string name, int age, Int64 snn, int projectsCount)
             : base(name, age, snn)
